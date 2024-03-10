@@ -1,0 +1,652 @@
+/*Root*/
+:root {
+   --clr-dark:#4D1E60;
+   --clr-gray:#F2F2F2;
+   --clr-highlights:#FFB73B;
+   
+   --ff-headings:'Chelsea Market', system-ui;
+   --ff-secondary: Lato, sans-serif;
+
+   --fw-light-secondary: 300;
+   --fw-regular-secondary: 400;
+   --fw-bold-secondary: 700;
+
+   --fs-headings: 3rem;
+   --fs-subheadings: 2rem; 
+   --fs-highlights: 1rem;
+   --fs-paragraph: 0.8rem;
+
+   --fs-headings-mob: 2rem;
+   --fs-subheadings-mob: 1.5rem; 
+}
+
+/*Reset*/
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+}
+
+/*Typography*/
+body {
+    font-family: var(--ff-secondary);
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: var(--ff-headings);
+    padding: 0.6em 0em;
+}
+
+h1 {
+    font-size: var(--fs-headings-mob);
+    color: var(--clr-highlights); 
+    padding-top: 0;   
+}
+
+h2 {
+    font-size: var(--fs-headings-mob); 
+    margin-top: 10px;  
+}
+
+.h2_benefits_heading {
+    color: var(--clr-dark);
+    margin: 0 1em;
+    text-align: center;  
+}
+
+.h2_ {
+    margin-inline: 1em;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-family: var(--ff-secondary);
+}
+
+.h3_hero {
+    font-size: 1.1rem;
+    color: var(--clr-dark); 
+    font-weight: bold;
+}
+
+.booking h3 {
+    padding-top: 2em;
+}
+
+.booking_link a{
+    color: #F2F2F2;
+    padding-top: 2em;  
+}
+
+.h2_subscription {
+    font-size: var(--fs-subheadings-mob);
+    color: var(--clr-dark);
+    margin: 0 auto;
+    text-align: left;
+    max-width: 600px;    
+}
+
+footer h2{
+    color: var(--clr-gray);
+    padding: 1em;
+}
+
+.FAQ h2 {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 1rem;
+}
+
+.FAQ {
+    padding: 3em 1em;
+    background-color: rgb(251, 204, 232);
+}
+
+p {
+    padding: 0.5em 0;
+    line-height: 1.5rem;
+}
+
+.why_wycinanki p {
+    color: var(--clr-dark);
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1em 0 1em 0;
+    text-align: left;
+}
+
+ul {
+    padding: 1em;
+}
+
+/*Layout*/
+.hero_top {
+    padding: 0 1em;
+}
+
+.hero_top button {
+    margin: 2em 0;
+}
+
+.booking_link a {
+    padding-top: 0;
+}
+
+.hero_img {
+    margin-bottom: -3px;
+    margin-top: 20px;
+}
+
+.container_adults, .container_kids {
+    padding: 0 1em 1em 1em ;
+}
+
+.booking {
+    text-align: left; 
+    padding-top: 2em ;  
+}
+
+.booking ul {
+    padding-bottom: 2em;
+}
+
+.booking li {
+    padding: 0.5em 0;
+    line-height: 1.5rem;
+}
+
+.bg_image {
+    background-image: url(images/moth.PNG);
+    background-size: cover;    
+}
+
+svg {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.yellow_scissors {
+    margin-top: -150px;
+    max-width: 320px; 
+}
+
+.passess {
+    padding-top: 4em;
+}
+
+.logo2 {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.pass {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    max-height: min-content;
+    background-color: var(--clr-highlights);
+    background-size: cover;
+    border-radius: 15px;
+    color: var(--clr-dark);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    margin-top: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.pass p {
+    line-height: 1rem;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.pass h2 {
+    padding: 0;
+    font-size: 2.5rem;
+}
+
+.pink_scissors {
+    margin-top: -100px;
+    max-width: 320px;
+    transform: rotate(180deg); 
+}
+
+button {
+    background-color: var(--clr-highlights);
+    color: var(--clr-dark); 
+    padding: 0.5em 1.5em; 
+    border-radius: 15px;
+    margin: 1.5em 0;
+    border: none;
+    max-width: max-content; 
+    font-family: var(--ff-headings);
+    font-size: 1.1rem;     
+}
+
+button:hover {
+    background-color: #F2F2F2;
+    transform: scale(1.025); 
+    transition: 0.5s;
+}
+
+button.accordion {
+    margin-block: 1em;  
+}
+
+.bt_ {
+    margin: 2.2em  auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-dark);  
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.logo {
+    min-width: 180px;
+    max-width: 200px;  
+}
+
+.box {
+    max-width: 10em;
+    margin: 2em auto;  
+}
+
+.box:last-of-type {
+    margin-bottom: 5em;
+}
+
+footer {
+    background-color: var(--clr-dark);
+}
+
+.gallery-img {
+    max-width: 90%;
+    padding: 0.5em 0.5em;    
+}
+
+.why_wycinanki {
+    padding: 3.5em 0;
+}
+
+/*Layout-accordion*/
+.accordion {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 5px;
+    text-align: left;
+    transition: 0.2s; 
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 1.3em;
+    text-align: middle;  
+    font-size: 1.2rem; 
+    background-color: var(--clr-dark);
+    color:#F2F2F2; 
+}
+
+.accordion_box {
+    padding: 1em;
+}
+
+button.cccordion {
+    vertical-align: middle;
+}
+
+.active, .accordion:hover {
+    background-color: #32133e;
+}
+
+.panel {
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+    background-color:rgb(251, 204, 232);
+    display: none;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 1em; 
+    color: var(--clr-dark); 
+}
+
+.accordion:after {
+    content: '\002B';
+    color: var(--clr-gray); 
+    float: right;
+    font-size: 1.5rem;    
+}
+
+.active:after {
+    content: "\2212";
+    color: var(--clr-gray);
+}
+
+._box {
+    margin: 0 auto;
+}
+
+i {
+    margin: 1em 0.2em;   
+}
+
+.booking_link2 {
+    margin: 0 auto;
+}
+.subscription {
+    padding: 2em;
+}
+
+/*Form -subscription*/
+form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   max-width: 400px; 
+   margin: 0 auto;   
+}
+
+.test {
+    margin: 2em  auto;
+}
+
+input {
+    width: 100%;
+    background-color: var(--clr-gray);
+    border: none;
+    margin-top: 0.2em; 
+    margin-bottom: 1em;
+    border-radius: 8px;
+    padding: 0.5em 1em;;
+}
+
+#submit { 
+    background-color: var(--clr-dark);
+    border: none; 
+    color: var(--clr-gray);
+    font-family: var(--ff-headings);
+    text-align: center;
+    padding-block: 1em;
+}
+
+#submit:hover {
+    background-color: var(--clr-dark);
+    color: var(--clr-gray);
+    background-color: #4D1E60;
+    transition: 0.5s;
+    transform: scale(1.1); 
+}
+
+fieldset {
+    border: none; 
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    color: var(--clr-dark);
+    font-size: 1.1rem;
+}
+
+.icon {
+    width: 20%;
+}
+
+/*Form-booking*/
+legend {
+    font-size: 1.5rem;
+    padding: 1em 0;
+    color: var(--clr-dark)
+}
+
+.p_star {
+    font-size: 0.8rem;
+}
+
+.h1_booking_form {
+    color: var(--clr-dark);
+    margin-top:1.5em 
+}
+
+.p_star::before {
+    content: "*";
+    color: red; 
+    font-size: 1.5rem;
+}
+
+.booking_message {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+textarea {
+    background-color: var(--clr-gray);
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    min-width: 100%;
+}
+
+.radio_button {
+    display: flex;
+    text-align: right;
+}
+
+input.radio  {
+    width: 10%;
+}
+
+.submit_booking {
+    background-color: var(--clr-dark);
+    color: #F2F2F2;
+    padding: 1em;
+    margin-top: 2em ;
+    font-size: 1.2rem;
+}
+
+.submit_booking:hover {
+    background-color: #32133e;
+    cursor: pointer; 
+}
+
+/*Booking Form id*/
+#booking {
+    padding: 1em;
+    padding-bottom: 3em ;
+}
+
+/*colors*/
+.booking, .hero {
+    background-color: var(--clr-dark);
+    color: whitesmoke;    
+}
+
+.hero_booking {
+    background-color: var(--clr-dark);
+}
+
+/*Media Queries*/
+
+@media (width > 500px) {
+    .gallery-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .gallery-img {  
+        max-width: 50%;
+        padding: 0.5em; 
+    }
+    .pass {
+        max-width: 500px;
+    }
+}
+
+@media (width > 700px) {
+    .booking {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 2em;
+    }
+    .container_adults, .container_kids {
+        width: 500px;
+        height: min-content;
+    }
+    .img_booking {
+        object-fit: cover;
+        width: 100%;
+        filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+        opacity: 90%;
+    }
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 80vh;
+    }
+    .hero_img {
+        width: 50%;
+        height: 80vh;
+        object-fit: cover;
+        margin-top: 0;
+    }
+    .hero_top {
+        flex-grow: 2;
+        
+    }
+    .hero_booking {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color: var(--clr-dark); 
+        border: solid 3px balck;
+    }
+    .logo {
+        max-width: 250px;
+        margin-top: 1em;
+    }
+    h1 {
+        font-size: var(--fs-headings);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    h3 {
+       font-size: 1.2rem; 
+    }
+    .boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-bottom: 5em ;
+    }
+    .box {
+        max-width: 200px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer_img {
+        width: 40%;
+        height: 80vh;
+        object-fit: cover;
+        margin-top: 0;
+    }
+    .footer_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 2;
+        gap: 3em;
+        padding-top: 2em;
+    }
+    footer h2 {
+        color: #F2F2F2;
+        max-width: 400px;
+        padding: 0 1em; 
+    }
+    .FAQ h2 {
+        font-size: 1.4rem;
+    }
+    .FAQ {
+        padding-top: 5em;
+        padding-bottom: 7em;
+    }
+    .socila_media {
+        margin: 0 auto;
+    }
+    .icon {
+        width: 15%;
+    } 
+}
+
+@media (width > 850px) {
+    .gallery-img {  
+        max-width: 25%;
+        padding: 0.5em; 
+    }
+    .pass {
+        max-width: 500px ;
+    }
+    .passess {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        padding: 2em 1em;
+    }
+    .why_wycinanki p {
+        max-width: 40%;
+    }
+    .icon {
+        width: 10%;
+    } 
+}
+
+
